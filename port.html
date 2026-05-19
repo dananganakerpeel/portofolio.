@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="port.css">
+  <!-- Google Font Inika -->
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+<!-- 1. Bootstrap dulu -->
+<link href="bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="bottom-nav">
+    <div class="d-flex align-items-center justify-content-around">
+      <a class="nav-item active" href="#home"      onclick="setActive(this)"><i class="bi bi-house-fill"></i><span>Home</span></a>
+      <a class="nav-item"        href="#about"     onclick="setActive(this)"><i class="bi bi-person-fill"></i><span>About</span></a>
+      <a class="nav-item"        href="#portfolio" onclick="setActive(this)"><i class="bi bi-file-earmark-text-fill"></i><span>Portfolio</span></a>
+      <a class="nav-item"        href="#contact"   onclick="setActive(this)"><i class="bi bi-telephone-fill"></i><span>Contact</span></a>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <!-- Ganti "bg.png" dengan nama file foto hero kamu -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-photo">
+        <img src="bg.png" alt="Danang Rifa Ramdani">
+      </div>
+      <div class="hero-text">
+        <span class="greeting">Hello Welcome</span>
+        <h1>I'm Danang</h1>
+        <h2>Rifa Ramdani</h2>
+        <p class="subtitle">Students From SMK Negri Tengaran</p>
+        <a href="text.html" class="btn-hero">Recount Text</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <!-- Ganti "about.png" dengan nama file foto about kamu -->
+  <section id="about">
+    <h1>ABOUT ME</h1>
+
+    <div class="about-inner">
+      <!-- Kiri: foto + label My Skill -->
+      <div class="about-left">
+        <img src="about.png" alt="About Danang">
+        <span class="my-skill-label">My Skill</span>
+      </div>
+      <!-- Kanan: card teks -->
+      <div class="about-card">
+        <p>As a student from SMK Negeri Tengaran, I find great joy in learning and continuously developing myself. I am passionate about expanding my knowledge, improving my skills, and contributing both within the school environment and beyond. With strong curiosity and a willingness to grow, I strive to give my best in every opportunity and am ready to face future challenges.</p>
+      </div>
+    </div>
+
+    <!-- Skill carousel -->
+    <div class="skills-wrap">
+      <div class="skill-track">
+        <div id="skillCarousel" class="carousel slide" style="width:100%" data-bs-ride="false">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="skill-item">
+                <div class="skill-icon"><img src="html.png" alt="HTML"></div>
+                <div class="skill-info">
+                  <div class="skill-name">HTML<br>80%</div>
+                  <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="skill-item">
+                <div class="skill-icon"><img src="css-3.png" alt="CSS"></div>
+                <div class="skill-info">
+                  <div class="skill-name">CSS<br>70%</div>
+                  <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="skill-item">
+                <div class="skill-icon"><img src="python.png" alt="Python"></div>
+                <div class="skill-info">
+                  <div class="skill-name">Python <br>70$</div>
+                  <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="skill-item">
+                <div class="skill-icon"><img src="figma.png" alt="Figma"></div>
+                <div class="skill-info">
+                  <div class="skill-name">Figma<br>70%</div>
+                  <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="skill-item">
+                <div class="skill-icon"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS"></div>
+                <div class="skill-info">
+                  <div class="skill-name">JavaScript <br>65%</div>
+                  <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#skillCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#skillCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PORTFOLIO ══ -->
+  <section id="portfolio">
+    <h1>PORTFOLIO</h1>
+    <div class="portfolio-wrap">
+      <div class="portfolio-card">
+        <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active"
+                 data-title="Website- 1" data-sub="Semester 1 Recycling"
+                 data-link="https://syarifau410-sudo.github.io/Dainki.recycle/">
+              <div class="portfolio-slide" style="background-image:url('kolaborasi1.png')">
+                <div class="portfolio-slide-overlay"></div>
+              </div>
+            </div>
+
+            <div class="carousel-item"
+                 data-title="Website- 2" data-sub="Semester 2 School"
+                 data-link="https://dananganakerpeel.github.io/Tugas./tugas2.html">
+              <div class="portfolio-slide" style="background-image:url('tugas2.jpg')">
+                <div class="portfolio-slide-overlay"></div>
+              </div>
+            </div>
+
+            <div class="carousel-item"
+                 data-title="Website- 3" data-sub="Semester 2 Environment"
+                 data-link="https://dananganakerpeel.github.io/tugas3/Lingkungan.html">
+              <div class="portfolio-slide" style="background-image:url('tugas3.jpg')">
+                <div class="portfolio-slide-overlay"></div>
+              </div>
+            </div>
+
+            <div class="carousel-item"
+                 data-title="Website- 4" data-sub="Semester 2 Travel.co"
+                 data-link="https://dananganakerpeel.github.io/tugas4/tugas4.html">
+              <div class="portfolio-slide" style="background-image:url('tugas4.jpg')">
+                <div class="portfolio-slide-overlay"></div>
+              </div>
+            </div>
+
+            <div class="carousel-item"
+                 data-title="Website- 5" data-sub="Semester 2 Puncak Apparel"
+                 data-link="https://dananganakerpeel.github.io/tugas5./tugas5.html">
+              <div class="portfolio-slide" style="background-image:url('tugas5.jpg')">
+                <div class="portfolio-slide-overlay"></div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <div class="portfolio-label">
+          <a id="pTitle" class="title" href="https://syarifau410-sudo.github.io/Dainki.recycle/">Website- 1</a>
+          <span id="pSub">Semester 1 Recycling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <h2>CONTACT ME</h2>
+    <form class="contact-form" action="#" method="post">
+      <input type="text"  name="nama"  placeholder="Full name..."           required>
+      <input type="email" name="email" placeholder="E-mail..."              required>
+      <textarea           name="pesan" placeholder="Write Your Message..."  required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#home">#Home</a></li>
+          <li><a href="#about">#About Me</a></li>
+          <li><a href="#portfolio">#Portfolio</a></li>
+          <li><a href="#contact">#Contact</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://tiktok.com/@ripaa890"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.instagram.com/ripaa____aa"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>About Me</h3>
+        <ul>
+          <li><i class="bi bi-telephone-fill"></i>Contact<br>+62 85726820300</li>
+          <li><i class="bi bi-geo-alt-fill"></i>Location<br>SMK Negri Tengaran</li>
+          <li><i class="bi bi-envelope-at-fill"></i>Email<br>dananganakerpeel@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Danang Rifa Ramdani. SMK Negri Tengaran</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
